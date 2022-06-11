@@ -1,0 +1,71 @@
+tr, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#logo {
+    width: 32px;
+    height: 32px;
+} 
+
+.menu-stavka {
+    background-color: #988F2A;
+}
+
+input {
+    display: block;
+}
+
+menu {
+    display: inline;
+    padding: 0px;
+}
+
+menu * {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav {
+    height: 100%;
+    background-color: #56494C;
+}
+
+a {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10vw;
+    animation-name: 'animacija';
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes animacija {
+    from {background-color: #988F2A;}
+    to {background-color: blue;}
+} */
+
+@media screen and (min-width: 330px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 329px) {
+    menu * {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
